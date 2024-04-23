@@ -5,9 +5,12 @@ public class User {
 	private String email;
 	private UserType userType;
 	
-	public void CreateUser() {
-		
-	}
+	public User(String userID, String password, String email, UserType userType) {
+        this.userID = userID;
+        this.password = password;
+        this.email = email;
+        this.userType = userType;
+    }
 	public void ResetPassword() {
 		
 	}
