@@ -1,3 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package rentalmanagement;
+
+/**
+ *
+ * @author Asus
+ */
 public class RentalContract {
     private String contractID;
     private String propertyID;
@@ -10,44 +20,14 @@ public class RentalContract {
         this.tenantID = tenantID;
         this.rentAmount = rentAmount;
     }
-    
+
+    // Getters and Setters
+
     public void createContract() {
-        
+        // Create a rental contract
     }
 
-    public String getContractID() {
-		return contractID;
-	}
-
-	public void setContractID(String contractID) {
-		this.contractID = contractID;
-	}
-
-	public String getPropertyID() {
-		return propertyID;
-	}
-
-	public void setPropertyID(String propertyID) {
-		this.propertyID = propertyID;
-	}
-
-	public String getTenantID() {
-		return tenantID;
-	}
-
-	public void setTenantID(String tenantID) {
-		this.tenantID = tenantID;
-	}
-
-	public double getRentAmount() {
-		return rentAmount;
-	}
-
-	public void setRentAmount(double rentAmount) {
-		this.rentAmount = rentAmount;
-	}
-
-	public void terminateContract() {
-        
+    public void terminateContract() {
+        // Terminate a rental contract
     }
 }

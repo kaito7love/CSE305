@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
         Contract contract = new ContractBuilder()
@@ -14,3 +15,4 @@ public class Main {
         System.out.println("Term: " + contract.getTerm());
     }
 }
+
