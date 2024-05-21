@@ -45,24 +45,24 @@ class ConfidentialDocument extends Document {
     }
 
     private byte[] encrypt(byte[] contentBytes) {
-        // try {
-        //     // Generate a secret key for AES encryption
-        //     KeyGenerator keyGen = KeyGenerator.getInstance("AES");
-        //     keyGen.init(128); // 128-bit key
-        //     SecretKey secretKey = keyGen.generateKey();
+        try {
+            // Generate a secret key for AES encryption
+            KeyGenerator keyGen = KeyGenerator.getInstance("AES");
+            keyGen.init(128); // 128-bit key
+            SecretKey secretKey = keyGen.generateKey();
 
-        //     // Create a Cipher instance for AES encryption
-        //     Cipher cipher = Cipher.getInstance("AES");
-        //     cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+            // Create a Cipher instance for AES encryption
+            Cipher cipher = Cipher.getInstance("AES");
+            cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 
-        //     // Encrypt the content bytes
-        //     byte[] encryptedBytes = cipher.doFinal(contentBytes);
+            // Encrypt the content bytes
+            byte[] encryptedBytes = cipher.doFinal(contentBytes);
 
-        //     return encryptedBytes;
-        // } catch (Exception e) {
-        //     System.out.println("Error encrypting content: " + e.getMessage());
-        //     return null;
-        // }
-        return contentBytes;
+            return encryptedBytes;
+        } catch (Exception e) {
+            System.out.println("Error encrypting content: " + e.getMessage());
+            return null;
+        }
+        // return contentBytes;
     }
 }
